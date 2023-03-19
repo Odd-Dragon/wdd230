@@ -1,0 +1,75 @@
+{   "directory": [
+      {
+        "name": "Gameopolis",
+        "membership": "Silver",
+        "address": "1150 S Blvd, Idaho Falls, ID 83402",
+        "phone": "(208) 529-8026",
+        "website": "https://www.discountgamesinc.com/",
+        "imageurl": "./images/gameopolis.jpg"
+      },
+      {
+        "name": "Reed's Dairy",
+        "membership": "Gold",
+        "address": "2660 W Broadway St, Idaho Falls, ID 83402",
+        "phone": "(208) 522-0123",
+        "website": "https://reedsdairy.com/",
+        "imageurl": "./images/reeds.jpg"
+      },
+      {
+        "name": "Costco",
+        "membership": "Gold",
+        "address": "2495 E Lincoln Rd, Idaho Falls, ID 83401",
+        "phone": "(986) 497-3149",
+        "website": "https://www.costco.com/",
+        "imageurl": "./images/costco.png"
+      },
+      {
+        "name": "Kiwanis Club",
+        "membership": "Nonprofit",
+        "address": "1970 E 17th St, Idaho Falls, ID 83404",
+        "phone": "(208) 552-6100",
+        "website": "https://www.kiwanis.org/",
+        "imageurl": "./images/kiwanis.gif"
+      },
+      {
+        "name": "A Street Games",
+        "membership": "Bronze",
+        "address": "369 Park Ave, Idaho Falls, ID 83402",
+        "phone": "(208) 542-2824",
+        "website": "No Website, but check them out on Facebook!",
+        "imageurl": "./images/a-games.jpg"
+      },
+      {
+        "name": "Barnes and Noble",
+        "membership": "Bronze",
+        "address": "2300 E 17th St Suite #1101, Idaho Falls, ID 83404",
+        "phone": "(208) 552-1452",
+        "website": "https://www.barnesandnoble.com/",
+        "imageurl": "./images/barnes-noble.jpg"
+      },
+      {
+        "name": "Pizza Pie Cafe",
+        "membership": "Silver",
+        "address": "3160 E 17th St, Ammon, ID 83406",
+        "phone": "(208) 522-5873",
+        "website": "https://pizzapiecafe.co",
+        "imageurl": "./images/pizza-pie.jpg"
+      },
+      {
+        "name": "Alpha Graphics",
+        "membership": "Bronze",
+        "address": "1680 Bentley Way, Idaho Falls, ID 83401",
+        "phone": "(208) 547-5847",
+        "website": "https://www.alphagraphics.com/us-idaho-idaho-falls-us679",
+        "imageurl": "./images/alpha-graphics.jpg"
+      },
+      {
+        "name": "Community Youth In Action",
+        "membership": "Nonprofit",
+        "address": "574 4th St, Idaho Falls, ID 83401",
+        "phone": "(208) 926-6633",
+        "website": "https://cyaidaho.org/",
+        "imageurl": "./images/cyapin.png"
+      }
+    ]
+}

@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&family=Titillium+Web:wght@300&display=swap');
+
+h1{font-family:'Pirata One','Times New Roman', Times, serif; color: #0c4d50; }
+h2{font-family:'Pirata One','Times New Roman', Times, serif; color: #0c4d50; margin: 10px; text-align: center;}
+h3{font-family:'Pirata One','Times New Roman', Times, serif; color: #0c4d50; margin: 10px;}
+h4{font-family:'Pirata One','Times New Roman', Times, serif; color: #0c4d50;}
+p{font-family:'Titillium Web',Arial, Helvetica, sans-serif; color: #0c4d50; margin: 10px;}
+
+main {
+    display: grid;
+}
+
+header {
+    background-color: #0c4d50;
+    display: grid;
+    grid-template-columns:100px 1fr 1fr 100px ;
+    justify-items: center;
+}
+nav {
+    display: grid;
+    grid-column: 4/5;
+    justify-items: end;
+}
+
+nav a {
+    color: #dad57a;
+    text-align: center;
+    text-decoration: none;
+    padding: 30px;
+    font-size: 20px;
+    display: none;
+}
+.responsive a{
+    display: block;
+}
+nav a:hover {
+    background-color: #590124;
+    color: #99c9bd;
+}
+.ham {
+    display: grid;
+    text-decoration: none;
+    font-size: 2.5em;
+    justify-self: end;
+    margin: 15px;
+}
+
+.logo {
+    width: 80px;
+    z-index: +1;
+    border-radius: 25px;
+    margin: 15px;
+}
+#logo_link{   
+    padding-top: 5px;
+    justify-self: left;
+    align-self: center;
+    z-index: +1;
+    grid-column: 1/2;
+}
+.logo:hover{
+    box-shadow: 0 0 50px #333;
+}
+.title-box  h1, .title-box h3{
+    color: #dad57a;
+    margin: 0px;
+}
+.title-box {
+    display: grid;
+    padding-top: 20px;
+    justify-self: start;
+    margin: 10px;
+    
+}
+#day {
+    display: grid;
+    grid-column: 1/5;
+    margin-bottom: 10px;
+	border: 1px solid #590124;
+	padding: 0.75rem;
+	background-color: #864153;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
+	color: #dad57a;
+    width: 98%;
+}
+#day1 {
+    display: grid;
+    grid-column: 1/5;
+    margin-bottom: 10px;
+	border: 1px solid #590124;
+	padding: 0.75rem;
+	background-color: #864153;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
+	color: #dad57a;
+    width: 98%;
+}
+.meeting {
+    display: grid;
+    grid-column: 1/5;
+    margin-bottom: 10px;
+	border: 1px solid #590124;
+	padding: 0.75rem;
+	background-color: #864153;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
+	color: #dad57a;
+    width: 98%;
+}
+
+/*--Main css--*/
+
+.content {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+}
+
+main section {
+    margin: 15px;
+    justify-self: start;
+    height: 400px;
+    width: 500px;
+    background-color: #fcf5e5;
+}
+
+section h2 {
+    margin: 10px;
+}
+.spotlight-box {
+    display: grid;
+    grid-column: auto;
+    height: 800px;
+    background-color:#eabcc9;
+}
+.spotlight1, .spotlight2, .spotlight3 {
+    display: grid;
+    border: solid #dad57a;
+    background-color:#fcf5e5;
+    border-width: 3px;
+    margin: 10px;
+}
+.join {
+    display: none;
+}
+.city {
+    width: 100%;
+    height: 100%;
+}
+.spotlight3 {
+    display: none;
+}
+.join-btn-2 {
+    margin: 20px;
+    border-radius: 25px;
+    height: 35%;
+    width: 35%;
+    justify-self: center;
+    text-align: center;
+    vertical-align: center;
+    font-size: 20px;
+    background-color: #0c4d50; 
+    color: #dad57a; 
+    border: 2px solid #0c4d50;
+}
+.join-btn-2:hover {
+    background-color: #590124;
+    color: #99c9bd;
+}
+.spot-p1 {
+    text-align: center;
+    justify-self: center;
+    font-size: 20px;
+    border-bottom: solid #dad57a;
+    align-self: end;
+}
+.spot-p2 {
+    text-align: center;
+}
+.book {
+    justify-self: center;
+}
+#condition {
+    text-align: right;
+    align-self: end;
+    border-bottom:  2px solid #dad57a;
+}
+.spot-img {
+    height:50%;
+    width: 25%;
+    justify-self: center;
+    margin-top: 25px;
+}
+.join-btn-1 {
+    border-radius: 25px;
+    position: absolute;
+    text-align: center;
+    vertical-align: center;
+    width: 100px;
+    height: 55px;
+    bottom: 15px;
+    right: 35px;
+    background-color: #0c4d50; 
+    color: #dad57a; 
+    border: 2px solid #0c4d50;
+}
+.join-btn-1:hover {
+    background-color: #590124;
+    color: #99c9bd;
+}
+.hero {
+    position: relative;
+    background-color:#EAE2B7;
+}
+
+.weather-box {
+    margin: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 35px;
+    background-color:#fcf5e5;
+}
+#weathericon {
+    width: 25%;
+    height: 25%;
+}
+#condition {
+    font-size: 25px;
+    text-align: center;
+}
+#temp {
+    font-size: 30px;
+}
+.degrees {
+    font-size: 30px;
+
+}
+.weather-p {
+    font-size: 20px;
+}
+
+/*--Footer--*/
+footer {
+    display: grid;
+    background-color: #caebe2;
+    grid-template-rows: 2;
+}
+footer p, footer h3 {
+    color: #0c4d50;
+    text-align: center;
+}
+.flogo-link {
+    padding-top: 5px;
+    justify-self: left;
+    align-self: center;
+    z-index: +1;
+    grid-column: 1/2;
+}
+.flogo {
+    width: 125px;
+    z-index: +1;
+    border-radius: 25px;
+    margin: 15px;
+}
+.ftitle-box  h1, .ftitle-box h3{
+    color: #0c4d50;
+    text-align: center;
+    margin: 0;
+}
+.ftitle-box {
+    display: grid;
+    margin: 10px;
+}
+.info-box {
+    text-align: center;
+}
+.ftag {
+    border-top: solid #0c4d50;
+    border-width: 1px;
+    grid-row: 4;
+}
+.fbox {
+    display: flex;
+    justify-content: center;
+    grid-row: 1;
+}
+.join-box {
+    display: grid;
+    grid-template-rows: 2;
+}
+.mem-box section {
+    height: 250px;
+    width: 350px;
+}
+.mem-box {
+    grid-row: 2;
+    width: 350px;
+    justify-self: center;
+}
+.form-box {
+    justify-self: center;
+    width: 600px;
+}
+/*--Discover page--*/
+.gallery{
+border: 1px solid #864153;
+}
+
+.gallery:hover {
+    box-shadow: 0 0 50px #333;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+  font-family:'Titillium Web',Arial, Helvetica, sans-serif; 
+  color: #0c4d50;
+  background-color:#fcf5e5;
+}
+* {
+  box-sizing: border-box;
+  font-family:'Titillium Web',Arial, Helvetica, sans-serif; 
+  color: #0c4d50;
+}
+.card {
+    width: 95%;
+    margin: 10px;
+}
+/*--Form Page--*/
+label, input {
+    display: block;
+    font-size: 1.5em;
+}
+label {
+    margin-top: 20px; 
+    font-family:'Titillium Web',Arial, Helvetica, sans-serif; 
+    color: #0c4d50;
+}
+select {
+    height: 45px;
+    font-family:'Titillium Web',Arial, Helvetica, sans-serif; 
+    color: #0c4d50;
+}
+input {
+    height: 45px;
+}
+form {
+    display: grid;
+    justify-items: center;
+    background-color: #fcf5e5;
+    justify-self: center;
+}
+.mem-level-title {
+    justify-self: center;
+    font-size: 35px;
+}
+.mem-descrip {
+    font-size: 20px;
+    margin: 15px;
+    background-color:#eabcc9;
+}
+.mem-title {
+    font-size: 33px;
+    text-align: center;
+    padding: 15px;
+}
+.form-title {
+    justify-self: center;
+    font-size: 35px;
+}
+.submit {
+    margin: 15px;
+    background-color: #eabcc9;
+    font-family:'Titillium Web',Arial, Helvetica, sans-serif; 
+    color: #0c4d50;
+}
+
+/**Thank you Form**/
+.thanks-kitten {
+    text-align: center;
+    justify-content: center;
+    background-color:#fcf5e5;
+}
+
+/*--Directory--*/
+.dir-title {
+    display: grid;
+    text-align: center;
+    grid-column: 1/5;
+    color:#dad57a;
+}
+
+.cards {
+display: flex;
+flex-wrap: wrap;
+text-align: center;
+justify-content: space-around;
+margin:10px;
+}
+.cards section {
+border: 1px solid #864153;
+background-color: #fcf5e5;
+padding: 15px;
+text-align: center;
+width: 300px;
+margin: 20px;
+}
+h2.directory {
+text-align: center;
+}
+img.directory {
+width: 90%;
+height: 170px;
+}
+table {
+ width: 100%;
+margin: 10px auto;
+border-collapse: collapse;
+}
+th, td {
+padding: 7px 15px;
+}
+td {
+display: block;
+text-align: center;
+font-family: 'Merriweather Sans', sans-serif;
+}
+table tr:nth-child(even) {
+background-color: #fcf5e5;
+}
+.tableDirectory {
+    border: #0c4d50 solid 1px;
+    border-radius: 25px;
+}
+#cardview {
+    text-align: center;
+    display: flex;
+    margin: 15px;
+    width: 30px;
+    height: 30px;
+}
+#listview {
+    text-align: center;
+    display: flex;
+    margin: 15px;
+    width: 30px;
+    height: 30px;
+}
+.btn-box {
+    display: flex;
+    justify-content: center;
+}

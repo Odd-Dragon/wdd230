@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idaho Falls Chamber of Commerce</title>
+    <link rel="icon" href="images/potato.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script defer src="scripts/index-scripts.js"></script>
+    <script defer src="scripts/join-scripts.js"></script>
+</head>
+<body>
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class='logo' src="images/potato.png" alt="Potato logo">
+        </a>
+        <div class="title-box">
+            <h1>Idaho Falls</h1>
+            <h3>Chamber of Commerce</h3>
+        </div>
+        <nav class="navigation">
+            <a class="ham" href="#">&#9776;</a>
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+    
+            </nav>
+                <h2 id="day1"></h2>
+    </header>
+    
+    <main>
+        <div class="join-box">
+            <div class="form-box">
+                <h2 class="form-title">Application for Chamber Membership</h2>
+                <form method="get" action="thankyou.html">
+                    <label for="fname">First Name *:</label>
+                    <input id="fname" type="text" name="firstName" required>
+                    <label for="lname">Last Name *:</label>
+                    <input id="lname" type="text" name="lastName" required>
+                    <label for="title">Business Title (Letters only, minimum 7 characters) * </label>
+                    <input id="title" type="text" name="bt" minlength="7" pattern="[A-Za-z -]+" required>
+                    <label for="email">Email *:</label>
+                    <input id="email" type="email" name="email" placeholder="name@example.com" required>
+                    <label for="phone">Phone Number *:</label>
+                    <input id="phone" type="tel" name="phone" required>
+                    <label for="business">Business Name *:</label>
+                    <input id="business" type="text" required>
+                    <label for="memberships">Membership Level </label>
+                    <select id="memberships" name="levels">
+                        <option value="NP Membership">NP Membership</option>
+                        <option value="canada">Bronze Membership</option>
+                        <option value="usa">Silver Membership</option>
+                        <option value="goldMembership">Gold Membership</option>
+                    </select>
+                    <label for="description">Business Description </label>
+                    <textarea id="description"></textarea>
+                    <input type="hidden" name="todaydate" value="CurrentDate">
+                    <input class="submit" type="submit" value="submit">
+                </form>
+            </div>
+            <div class="mem-box">
+                <h2 class="mem-level-title">Membership level Benefits</h2>
+                <section>
+                    <h3 class="mem-title">NP Membership</h3>
+                    <p class="mem-descrip">
+                        <ul>
+                            <li>Basic Access to the Chamber</li>
+                            <li>No Fee</li>
+                            <li>This option is intended for Non-Profit Organizations</li>
+                        </ul>
+                </section>
+                <section>
+                    <h3 class="mem-title">Bronze Membership</h3>
+                    <p class="mem-descrip">
+                        <ul>
+                            <li>15% Discount on Events</li>
+                            <li>10% Discount on Advertisng</li>
+                            <li>Fee of $50 per Month</li>
+                        </ul>
+                    </p>
+                </section>
+                <section>
+                    <h3 class="mem-title">Silver Membership</h3>
+                    <p class="mem-descrip">
+                        <ul>
+                            <li>25% Discount on Events</li>
+                            <li>15% Discount on Advertisng</li>
+                            <li>Free Participation in the Trade Fair</li>
+                            <li>Fee of $100 per Month</li>
+                        </ul>
+                    </p>
+                </section>
+                <section>
+                    <h3 class="mem-title">Gold Membership</h3>
+                    <p class="mem-descrip">
+                        <ul>
+                            <li>50% Discount on Events</li>
+                            <li>50% Discount on Advertisng</li>
+                            <li>Free Participation in the Trade Fair</li>
+                            <li>5 Free Featured Ads/Year</li>
+                            <li>1 Free Training Per Quarter</li>
+                            <li>Fee of $200 per Month</li>
+<!-- I changed this membership fee, because in the instructions we were told 
+that both it and silver are $100 but if that's the case why wouldn't you just 
+go gold instead of silver? So it's $200 now. /!-->
+                    </p>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="fbox">
+            <a id="flogo_link" href="index.html">
+                <img class='flogo' src="images/potato.png" alt="Potato logo">
+            </a>
+            <div class="ftitle-box">
+                <h3>Visit Us</h3>
+                <p>2495 E Lincoln Rd</p>
+                <p>Idaho Falls, ID 83401</p>
+            </div>
+            <div class="info-box">
+                <h3>Contact Us</h3>
+                <p>quixoticdragons@gmail.com</p>
+                <p>(208) 403-6618</p>
+            </div>
+        </div>
+  
+        <div class="ftag">
+            <p> &copy; <span class ="currentyear"></span> Idaho Falls Chamber of Commerce | <span class="name">Kalina Warner </span>| WDD 230 Project</p>
+        </div>
+    </footer>
+</body>
+</html>

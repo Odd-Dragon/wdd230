@@ -142,7 +142,6 @@ section h2 {
 }
 .spotlight1, .spotlight2, .spotlight3 {
     display: grid;
-    border: solid #dad57a;
     background-color:#fcf5e5;
     border-width: 3px;
     margin: 10px;

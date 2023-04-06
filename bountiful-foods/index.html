@@ -16,33 +16,13 @@
     <header>
         <div class="title-box">
             <h1>Bountiful Foods</h1>
-            <h3 id="day"></h3>
         </div>
-        <a id="logo_link" href="index.html">
-        <img class= "logo" src="images/foodslogo.png" alt="logo">
-        </a>
-        <div class="time-box">
-            <!--The clock is one of my attempts to make this mine! It's a fully-
-            functioning analog clock, and will sync with the actual time, just 
-            like the numbers below it... but I did not have the patience or time 
-            to fully sync it so that it would update in real-time, so it only updates
-            on refresh of the page.-->
-            <div class="clock">
-                <div class="outer-clock-face">
-                <div class="marking marking-one"></div>
-                <div class="marking marking-two"></div>
-                <div class="marking marking-three"></div>
-                <div class="marking marking-four"></div>
-                <div class="inner-clock-face">
-                    <div class="hand hour-hand"></div>
-                    <div class="hand min-hand"></div>
-                    <div class="hand second-hand"></div>
-                </div>
-                </div>
-            </div>
-            <h3 id="time"></h3>
+        <div class="logo-box">
+            <a id="logo_link" href="index.html">
+                <img class= "logo" src="images/foodslogo.png" alt="logo">
+            </a>
         </div>
-        <nav>
+        <nav class="navigation">
             <a class="ham" href="#">&#9776;</a>
             <a href="index.html">Home</a>
             <a href="fresh.html">Fresh</a>
@@ -50,7 +30,93 @@
         </nav>
     </header>
     <main>
-
+        <div class="content-1">
+            <section class="weather-box">
+                <h2 class="wtitle1">Weather</h2>
+                <div class="current-weather">
+                    <img class="weathericon" id="weathericon" alt="Weather icon">
+                    <div class="cw-info-1">
+                        <p class="degrees">Temperature: <span id="temp"></span>&#176;F</p>
+                        <p id="condition">here</p>
+                    </div>
+                    <div class="cw-info-2">
+                        <p class="humidity">Humidity: <span id="humidity"></span>%</p>
+                    </div>
+                </div>
+                <h2 class="wtitle2">Three-Day Forecast</h2>
+                <div class="three-days">
+                    <div class="forecast day-1">
+                        <img class="weathericon1" id="weathericon2" alt="Weather icon">
+                        <p id="condition2">here</p>
+                        <p class="degrees">Temperature: <span id="temp2"></span>&#176;F</p>
+                        <p class="humidity">Humidity: <span id="humidity2"></span>%</p>
+                    </div>
+                    <div class="forecast day-2">
+                        <img class="weathericon1" id="weathericon3" alt="Weather icon">
+                        <p id="condition3">here</p>
+                        <p class="degrees">Temperature: <span id="temp3"></span>&#176;F</p>
+                        <p class="humidity">Humidity: <span id="humidity3"></span>%</p>
+                        <p class="date"><span id="date3"></span></p>
+                    </div>
+                    <div class="forecast day-3">
+                        <img class="weathericon1" id="weathericon4" alt="Weather icon">
+                        <p id="condition4">here</p>
+                        <p class="degrees">Temperature: <span id="temp4"></span>&#176;F</p>
+                        <p class="humidity">Humidity: <span id="humidity4"></span>%</p>
+                    </div>
+                </div>
+            </section>
+            <section class="action-box">
+                <h2>Make your very own fun, fruity drink recipe!</h2>
+                <p class="drinks-made" id=".drink-count"></p>
+                <div class="fresh-btn">
+                    <a class="fresh-link" href="./fresh.html">Get Started!</a>
+                </div>
+                <!--Image (and a great recipe!) taken from this website https://www.recipetineats.com/celebration-fruit-punch/-->
+                <img class="action-pic" src="./images/fruit-punch-cropped.jpg" alt="colorful fruit punch">
+            </section>
+        </div>
+        <div class="content-2">
+            <section class="time-box">
+            <h2>Date and Time</h2>
+            <!--The clock is one of my attempts to make this mine! It's a fully-
+            functioning analog clock, and will sync with the actual time, just 
+            like the numbers below it... but I did not have the patience or time 
+            to fully sync it so that it would update in real-time, so it only updates
+            on refresh of the page. Additionally, it was originally intended to be in 
+            the header, according to the wireframe I made, but it looked crowded up 
+            there, especially with the addition of the "Home" button in nav, so it gets 
+            its own card instead.-->
+                <div class="clock">
+                    <div class="outer-clock-face">
+                    <div class="marking marking-one"></div>
+                    <div class="marking marking-two"></div>
+                    <div class="marking marking-three"></div>
+                    <div class="marking marking-four"></div>
+                    <div class="inner-clock-face">
+                        <div class="hand hour-hand"></div>
+                        <div class="hand min-hand"></div>
+                        <div class="hand second-hand"></div>
+                    </div>
+                    </div>
+                </div>
+                <h3 id="day"></h3>
+                <h3 id="time"></h3>
+            </section>
+            <section class="hero-img">
+            <!--Image sourced from https://www.forbiddenfruitorchards.com/-->
+                <img class="hero" src="./images/fruit-cropped.jpg" alt="Forbidden Fruit Orchards Image">
+            </section>
+            <section class="info-box">
+                <h2>Did you know?</h2>
+            <!--Fun Fact sourced from https://kids.kiddle.co/Lompoc,_California-->
+                <p>The Lompoc Valley Flower Festival, held the last week of June, 
+                    features a parade, carnival and craft show. In 2002, the Bodger 
+                    Seed Company planted a "floral flag" as a tribute after the September 
+                    11 attacks. The "flag" was 740 feet by 390 feet, covered 6.65 acres, 
+                    and was estimated to contain more than 400,000 larkspur plants.</p>
+            </section>
+        </div>
     </main>
     <footer>
         <div class="footerElements">
@@ -63,9 +129,30 @@
                     <img class="twitter-logo" src="images/twitter.png" alt="twitter icon">
                 </a>
             </div>
-            <div class="ftag">
-                <p> &copy; <span class ="currentyear"></span> Bountiful Foods | <span class="name">Kalina Warner </span>| WDD 230 Final Project | <span class="modified"></span></p>
+            <!--I didn't feel comfortable putting in a random company's phone 
+            number/address/etc without their permission or knowledge, so, as the
+            specific Bountiful Foods we're talking about does not exist, the phone
+            number and email address are mine, and the physical address (and map data)
+            are linked to my old high school, which, conveniently, is located in
+            Lompoc, California- a Southern California Coast town, as requested in
+            the assignment instructions. My basic information is also about Lompoc,
+            and the photo I've chosen is of the town as well.-->
+            <div class="contact">
+                <h2>Contact Us:</h2>
+                <p>Phone: (208)403-6618 </p>
+                <p>Email: kalinamosher7@gmail.com </p>
             </div>
-        </div>    
+            <div class="address">
+                <h2>Address</h2>
+                <p>4350 Constellation Rd</p>
+                <p>Lompoc, CA 93436</p>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1679209.0567678618!2d-122.78150030625001!3d34.71261510000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80ec19b1044744d3%3A0xca46bd91f780cff7!2sCabrillo%20High%20School!5e0!3m2!1sen!2sus!4v1680713203408!5m2!1sen!2sus" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="ftag">
+            <p> &copy; <span class ="currentyear"></span> Bountiful Foods | <span class="name">Kalina Warner </span>| WDD 230 Final Project | <span class="modified"></span></p>
+        </div>
     </footer>
 </body>

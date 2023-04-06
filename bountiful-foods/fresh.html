@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bountiful Foods</title>
+    <link rel="icon" href="./images/foods-favicon.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script defer src="scripts/index-scripts.js"></script>
+    <script defer src="scripts/fresh-scripts.js"></script>
+</head>
+<body>
+    <header>
+        <div class="title-box">
+            <h1>Bountiful Foods</h1>
+        </div>
+        <div class="logo-box">
+            <a id="logo_link" href="index.html">
+                <img class= "logo" src="images/foodslogo.png" alt="logo">
+            </a>
+        </div>
+        <nav class="navigation">
+            <a class="ham" href="#">&#9776;</a>
+            <a href="index.html">Home</a>
+            <a href="fresh.html">Fresh</a>
+            <a href="about.html">About Us</a>
+        </nav>
+    </header>
+    <main>
+        <h2 class="form-title">Design your Dream Drink!</h2>
+            <div class="form-box">
+                <form>
+                    <label for="fname">First Name *:</label>
+                    <input id="fname" type="text" name="firstName" required>
+                    <label for="email">Email *:</label>
+                    <input id="email" type="email" name="email" placeholder="name@example.com" required>
+                    <label for="phone">Phone Number *:</label>
+                    <input id="phone" type="tel" name="phone" required>
+                    <label for="fruit-choice-1">Choose your first fruit:</label>
+                    <input id="fruit-choice" list="fruitList" name="fruit-choice-1" required>
+                    <datalist id="fruitList">
+                    </datalist>
+                    <label for="fruit-choice-2">Choose your second fruit:</label>
+                    <input id="fruit-choice" list="fruitList" name="fruit-choice-2" required>
+                    <datalist id="fruitList">
+                    </datalist>
+                    <label for="fruit-choice-3">Choose your third fruit:</label>
+                    <input id="fruit-choice" list="fruitList" name="fruit-choice-3" required>
+                    <datalist id="fruitList">
+                    </datalist>
+                    <label for="description">Special Instructions: </label>
+                    <textarea id="description"></textarea>
+                    <input type="hidden" name="todaydate" value="CurrentDate">
+                    <button onclick="popUp()">Submit</button>
+                </form>
+            </div>
+    </main>
+    <footer>
+        <div class="footerElements">
+            <div class="social">
+                <a href="https://instagram.com" target="_blank">
+                    <img class="insta-logo" src="images/instagram.png" alt="instagram icon">
+                <a href="https://facebook.com" target="_blank">
+                    <img class="fb-logo" src="images/facebook.png" alt="facebook icon">
+                <a href="https://twitter.com" target="_blank">
+                    <img class="twitter-logo" src="images/twitter.png" alt="twitter icon">
+                </a>
+            </div>
+            <!--I didn't feel comfortable putting in a random company's phone 
+            number/address/etc without their permission or knowledge, so, as the
+            specific Bountiful Foods we're talking about does not exist, the phone
+            number and email address are mine, and the physical address (and map data)
+            are linked to my old high school, which, conveniently, is located in
+            Lompoc, California- a Southern California Coast town, as requested in
+            the assignment instructions. My basic information is also about Lompoc,
+            and the photo I've chosen is of the town as well.-->
+            <div class="contact">
+                <h2>Contact Us:</h2>
+                <p>Phone: (208)403-6618 </p>
+                <p>Email: kalinamosher7@gmail.com </p>
+            </div>
+            <div class="address">
+                <h2>Address</h2>
+                <p>4350 Constellation Rd</p>
+                <p>Lompoc, CA 93436</p>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1679209.0567678618!2d-122.78150030625001!3d34.71261510000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80ec19b1044744d3%3A0xca46bd91f780cff7!2sCabrillo%20High%20School!5e0!3m2!1sen!2sus!4v1680713203408!5m2!1sen!2sus" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="ftag">
+            <p> &copy; <span class ="currentyear"></span> Bountiful Foods | <span class="name">Kalina Warner </span>| WDD 230 Final Project | <span class="modified"></span></p>
+        </div>
+    </footer>
+</body>

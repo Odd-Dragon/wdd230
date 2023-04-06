@@ -47,31 +47,60 @@ hambutton.addEventListener('click', () => {
     mainnav.classList.toggle('responsive');})
 
 /*--weather API--*/
-const apiURL = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Idaho%20Falls?unitGroup=us&key=MS52QN8HY4859X2EBHJXYAMGW&contentType=json";
+const apiURL = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Carlsbad%2C%20California?unitGroup=us&key=MS52QN8HY4859X2EBHJXYAMGW&contentType=json";
 const getWeather = async () => {
     const response = await fetch(apiURL);
     const data = await response.json();
     console.log(data);
-    let t = data.currentConditions.temp;
-    document.querySelector('#temp').textContent = t;
-    let image = `https://raw.githubusercontent.com/visualcrossing/WeatherIcons/main/SVG/1st%20Set%20-%20Color/${data.currentConditions.icon}.svg`;
-    document.querySelector('#speed').textContent = data.currentConditions.windspeed;
-    document.querySelector('#condition').textContent =  data.currentConditions.conditions;
-    document.querySelector('#weathericon').src = image;
-    document.querySelector('#weathericon').alt= data.currentConditions.conditions + ' icon';
+    let t1 = data.days[0].temp;
+    let h1 = data.days[0].humidity;    
+    document.querySelector('#temp').textContent = t1;
+    let image1 = `https://raw.githubusercontent.com/visualcrossing/WeatherIcons/main/SVG/1st%20Set%20-%20Color/${data.days[0].icon}.svg`;
+    document.querySelector('#condition').textContent =  data.days[0].conditions;
+    document.querySelector('#weathericon').src = image1;
+    document.querySelector('#weathericon').alt= data.days[0].conditions + ' icon';
+    document.querySelector('#humidity').textContent = h1;
+    let t2 = data.days[1].temp;
+    let h2 = data.days[1].humidity;    
+    document.querySelector('#temp2').textContent = t2;
+    let image2 = `https://raw.githubusercontent.com/visualcrossing/WeatherIcons/main/SVG/1st%20Set%20-%20Color/${data.days[1].icon}.svg`;
+    document.querySelector('#condition2').textContent =  data.days[1].conditions;
+    document.querySelector('#weathericon2').src = image2;
+    document.querySelector('#weathericon2').alt= data.days[1].conditions + ' icon';
+    document.querySelector('#humidity2').textContent = h2;
+    let w2 = data.days[2].DateTime;
+    let t3 = data.days[2].temp;
+    let h3 = data.days[2].humidity;    
+    document.querySelector('#temp3').textContent = t3;
+    let image3 = `https://raw.githubusercontent.com/visualcrossing/WeatherIcons/main/SVG/1st%20Set%20-%20Color/${data.days[2].icon}.svg`;
+    document.querySelector('#condition3').textContent =  data.days[2].conditions;
+    document.querySelector('#weathericon3').src = image3;
+    document.querySelector('#weathericon3').alt= data.days[2].conditions + ' icon';
+    document.querySelector('#humidity3').textContent = h3;
+    document.querySelector('#date3').textContent = w2;
+    let t4 = data.days[3].temp;
+    let h4 = data.days[3].humidity;    
+    document.querySelector('#temp4').textContent = t4;
+    let image4 = `https://raw.githubusercontent.com/visualcrossing/WeatherIcons/main/SVG/1st%20Set%20-%20Color/${data.days[3].icon}.svg`;
+    document.querySelector('#condition4').textContent =  data.days[3].conditions;
+    document.querySelector('#weathericon4').src = image4;
+    document.querySelector('#weathericon4').alt= data.days[3].conditions + ' icon';
+    document.querySelector('#humidity4').textContent = h4;
+}
 
-/*--Wind Chill Calculation--*/
-    let notapplicapble = " N/A"
-    let temp = parseFloat(document.getElementById('temp').textContent);
-    let windspeed = parseFloat(document.getElementById('speed').textContent);
-    let windchill = Math.round((35.74 + (0.6215 * temp))-(35.75 * Math.pow(windspeed,0.16)) + (0.4275*temp*Math.pow(windspeed,0.16)));
-
-    if (temp <= 50.00 && windspeed >= 3.00) {
-      document.getElementById('chill').innerHTML = " " + windchill + "&#176;F";}
-    else{
-      document.getElementById('chill').innerHTML = notapplicapble;};};
 getWeather();
 
 /*--Storage local--*/
 if (!localStorage.getItem('lastvist')) {
   localStorage.getItem('lastvisit', Date.now())};
+
+/*--Local Storage of Drinks Made--*/
+function increaseCounter() {
+  var count = Number(window.localStorage.getItem("drinks"));
+  count += 1;
+  window.localStorage.setItem("drinks", count);
+  }
+
+document.getElementById(".drink-count").innerHTML = "You have designed" + count + "unique drink recipes!";
+
+

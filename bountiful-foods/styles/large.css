@@ -1,0 +1,48 @@
+@media screen and (min-width: 1030px) {
+    .ham {
+        display: none;
+    }
+    nav a {
+        display: grid;
+        font-size: 25px;
+    }
+    .navigation {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        align-items: center;
+    }
+    .content-1 {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 48.25% 48.25%;
+        grid-gap: 30px;
+        justify-content: center;
+    }
+    .weather-box{
+        grid-column: 1;
+    }
+    .action-box{
+        grid-column: 2;
+    }
+    .content-2{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 33% 33% 33%;
+        justify-content: center; 
+    }
+    .time-box{
+        grid-column: 1;
+    }
+    .hero-img{
+        grid-column: 2;
+    }
+    .info-box{
+        grid-column: 3;
+    }
+    .content-3{
+        grid-template-columns:33% 33% 33%;
+    }
+    .history-block{
+        grid-column: 1/4;
+    }
+}
